@@ -8,16 +8,16 @@ A guide to implementing component-based architecture in Rails implemented using:
 * Rubocop
 
 ### Table of Contents
-**[Engines](#engines)**
-**[Gems](#gems)**
+**[Engines](#engines)**  
+**[Gems](#gems)**  
 
 ## Engines
 
 Rails Engines are useful for components that use database models and views.
 
-**[Generating a new engine](#generating-a-new-engine)**
-**[Add Rspec and related dependencies](#add-rspec-and-related-dependencies)**
-**[Host application configuration](#host-application-configuration)**
+**[Generating a new engine](#generating-a-new-engine)**  
+**[Add Rspec and related dependencies](#add-rspec-and-related-dependencies)**  
+**[Host application configuration](#host-application-configuration)**  
 
 ### Generating a new engine
 
@@ -86,8 +86,8 @@ end
 
 Gems are best for extracting functionality that does not depend on reading/writing to the database and has no view layer
 
-**[Generating a new gem](#generating-a-new-gem)**
-**[Plug into host application](#plug-into-host-application)**
+**[Generating a new gem](#generating-a-new-gem)**  
+**[Plug into host application](#plug-into-host-application)**  
 
 ### Generating a new gem
 
