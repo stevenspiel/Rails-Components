@@ -40,7 +40,7 @@ spec.add_development_dependency 'rspec-rails'
 Component test database to use the main app database:
 
 ```bash
-$ cd <rails_root>/components/ui_core/spec/dummy/config
+$ cd $RAILS_ROOT/components/ui_core/spec/dummy/config
 $ rm database.yml
 $ ln –s ../../../../../config/database.yml
 ```
@@ -48,7 +48,7 @@ $ ln –s ../../../../../config/database.yml
 Install Rspec:
 
 ```bash
-$ cd <rails_root>/components/ui_core
+$ cd $RAILS_ROOT/components/ui_core
 $ rails generate rspec:install
 ```
 
@@ -66,7 +66,7 @@ require File.expand_path('../dummy/config/environment', __FILE__)
 
 ### Host application configuration
 
-Add these lines to the main app's Gemfile (`<rails_root>/Gemfile`):
+Add these lines to the main app's Gemfile (`$RAILS_ROOT/Gemfile`):
 
 ```rb
 path 'components/' do
@@ -74,7 +74,7 @@ path 'components/' do
 end
 ```
 
-Mount the engine by adding these lines to the main app's routes (`<rails_root>/config/routes.rb`):
+Mount the engine by adding these lines to the main app's routes (`$RAILS_ROOT/config/routes.rb`):
 
 ```rb
 Rails.application.routes.draw do
@@ -99,7 +99,7 @@ $ bundle gem parser
 
 ### Plug into host application
 
-Add these lines to the main app's Gemfile (`<rails_root>/Gemfile`):
+Add these lines to the main app's Gemfile (`$RAILS_ROOT/Gemfile`):
 
 ```rb
 path 'components/' do
