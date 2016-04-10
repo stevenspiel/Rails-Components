@@ -6,3 +6,4 @@ A guide to implementing component-based architecture in Rails implemented using:
 * ERB
 * Rspec
 * Factory Girl
+* Rubocop

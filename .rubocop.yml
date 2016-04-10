@@ -1,0 +1,41 @@
+AllCops:
+  Exclude:
+    - '**/db/schema.rb'
+    - '**/vendor/**/*'
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+Metrics/AbcSize:
+  Exclude:
+    - '**/db/migrate/**/*'
+Metrics/LineLength:
+  Exclude:
+    - '**/spec/**/*'
+  Max: 120
+Metrics/MethodLength:
+  Exclude:
+    - '**/db/migrate/**/*'
+
+Style/CollectionMethods:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+Style/SingleLineBlockParams:
+  Enabled: false
+Rails/Date:
+  Enabled: false
+Style/SpaceBeforeFirstArg:
+  Exclude:
+    - '**/spec/factories/**'
+Style/MutableConstant:
+  Enabled: true
